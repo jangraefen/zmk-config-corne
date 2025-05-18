@@ -31,7 +31,7 @@ layers:
   - RIGHT
   - DE TILDE
   - ''
-  - '&sys_reset'
+  - {t: ▽, type: trans}
   - DE GRAVE
   - DE PIPE
   - DE RBKT
@@ -42,7 +42,7 @@ layers:
   - PG UP
   - END
   - ''
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - {type: held}
   - ''
@@ -58,10 +58,10 @@ layers:
   - DE 9
   - ''
   - ''
+  - ''
   - DE U UMLAUT
   - ''
   - DE O UMLAUT
-  - ''
   - ''
   - DE BACKSLASH
   - ''
@@ -78,7 +78,7 @@ layers:
   - ''
   - ''
   - '&bootloader'
-  - ''
+  - {t: ▽, type: trans}
   - ''
   - ''
   - DE 1
@@ -89,7 +89,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&sys_reset'
+  - {t: ▽, type: trans}
   - DE 0
   - {t: ▽, type: trans}
   - ''
