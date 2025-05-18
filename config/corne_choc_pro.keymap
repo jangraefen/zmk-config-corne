@@ -21,9 +21,10 @@
     combos {
         compatible = "zmk,combos";
 
-        gui {
+        combo_gui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <40 42>;
+            layers = <0>;
         };
     };
 
