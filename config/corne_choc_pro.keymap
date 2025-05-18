@@ -40,7 +40,7 @@
         super_esc: super_esc {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ESCAPE &kp COLON &kp W &kp A &kp ENTER>;
+            bindings = <&kp ESC &kp DE_COLON &kp DE_W &kp DE_A &kp ENTER>;
             label = "SUPER_ESC";
         };
     };
@@ -82,8 +82,8 @@
             display-name = "RIGHT";
             bindings = <
                 &none &kp DE_AT       &none     &kp DE_N7 &kp DE_N8 &kp DE_N9 /**/ &none /* ----- */ &none /**/ &kp DE_U_UMLAUT &none  &kp DE_O_UMLAUT &none &none &kp DE_BACKSLASH
-                &none &kp DE_A_UMLAUT &kp DE_SZ &kp DE_N4 &kp DE_N5 &kp DE_N6 /**/ &none /* ----- */ &none /**/ &none           &none  &none           &none &none &none
-                &none &none           &none     &kp DE_N1 &kp DE_N2 &kp DE_N3 /**/       /* ----- */       /**/ &none           &none  &none           &none &none &none
+                &none &kp DE_A_UMLAUT &kp DE_SZ &kp DE_N4 &kp DE_N5 &kp DE_N6 /**/ &none /* ----- */ &none /**/ &none           &none  &none           &none &none &bootloader
+                &none &none           &none     &kp DE_N1 &kp DE_N2 &kp DE_N3 /**/       /* ----- */       /**/ &none           &none  &none           &none &none &sys_reset
                                                 &kp DE_N0 &trans    &none     /**/       /* ----- */       /**/ &none           &trans &none
             >;
         };
