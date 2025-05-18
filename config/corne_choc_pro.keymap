@@ -51,8 +51,8 @@
             #binding-cells = <0>;
             tapping-term-ms = <180>;
             bindings = <&kp ESC>, <&super_esc>;
-        }
-    }
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
