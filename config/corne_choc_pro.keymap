@@ -23,7 +23,7 @@
 
         gui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <36 38>;
+            key-positions = <40 42>;
         };
     };
 
@@ -36,16 +36,34 @@
         };
     };
 
+    macros {
+        super_esc: super_esc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp A &kp ENTER>;
+            label = "SUPER_ESC";
+        };
+    };
+
+    behaviors {
+        td_super_esc: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <180>;
+            bindings = <&kp ESC>, <&super_esc>;
+        }
+    }
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "BASE";
             bindings = <
-                &kp ESC   &kp DE_Q &kp DE_W &kp DE_E  &kp DE_R &kp DE_T  /**/ &none /* ----- */ &none /**/ &kp DE_Z  &kp DE_U  &kp DE_I     &kp DE_O   &kp DE_P     &kp DE_QUESTION
-                &kp TAB   &kp DE_A &kp DE_S &kp DE_D  &kp DE_F &kp DE_G  /**/ &none /* ----- */ &none /**/ &kp DE_H  &kp DE_J  &kp DE_K     &kp DE_L   &kp DE_PLUS  &kp DE_HASH
-                &kp LSHFT &kp DE_Y &kp DE_X &kp DE_C  &kp DE_V &kp DE_B  /**/       /* ----- */       /**/ &kp DE_N  &kp DE_M  &kp DE_COMMA &kp DE_DOT &kp DE_MINUS &kp RSHIFT
-                                            &kp LCTRL &mo 1    &kp SPACE /**/       /* ----- */       /**/ &kp ENTER &mo 2     &kp BSPC
+                &td_super_esc &kp DE_Q &kp DE_W &kp DE_E  &kp DE_R &kp DE_T  /**/ &none /* ----- */ &none /**/ &kp DE_Z  &kp DE_U  &kp DE_I     &kp DE_O   &kp DE_P     &kp DE_CARET
+                &kp TAB       &kp DE_A &kp DE_S &kp DE_D  &kp DE_F &kp DE_G  /**/ &none /* ----- */ &none /**/ &kp DE_H  &kp DE_J  &kp DE_K     &kp DE_L   &kp DE_PLUS  &kp DE_HASH
+                &kp LSHFT     &kp DE_Y &kp DE_X &kp DE_C  &kp DE_V &kp DE_B  /**/       /* ----- */       /**/ &kp DE_N  &kp DE_M  &kp DE_COMMA &kp DE_DOT &kp DE_MINUS &kp RSHIFT
+                                                &kp LCTRL &mo 1    &kp SPACE /**/       /* ----- */       /**/ &kp ENTER &mo 2     &kp BSPC
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
@@ -53,7 +71,7 @@
         left_layer {
             display-name = "LEFT";
             bindings = <
-                &studio_unlock &kp DE_EXCL  &kp DE_DQT  &kp DE_EURO &kp DE_DOLLAR &kp DE_PERCENT /**/ &none /* ----- */ &none /**/ &kp DE_AMPS &kp DE_SLASH &kp DE_LPAR &kp DE_RPAR &kp DE_EQUAL &none
+                &studio_unlock &kp DE_EXCL  &kp DE_DQT  &kp DE_EURO &kp DE_DOLLAR &kp DE_PERCENT /**/ &none /* ----- */ &none /**/ &kp DE_AMPS &kp DE_SLASH &kp DE_LPAR &kp DE_RPAR &kp DE_EQUAL &kp DE_QUESTION
                 &bootloader    &none        &none       &kp DE_LBKT &kp DE_LBRC   &kp DE_LT      /**/ &none /* ----- */ &none /**/ &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT   &kp DE_TILDE &none
                 &sys_reset     &kp DE_GRAVE &kp DE_PIPE &kp DE_RBKT &kp DE_RBRC   &kp DE_GT      /**/       /* ----- */       /**/ &kp HOME    &kp PG_DN    &kp PG_UP   &kp END     &none        &none
                                                         &none       &trans        &none          /**/       /* ----- */       /**/ &kp TAB     &trans       &kp DELETE
