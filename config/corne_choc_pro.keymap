@@ -74,7 +74,7 @@
             bindings = <
                 &studio_unlock &kp DE_EXCL  &kp DE_DQT  &kp DE_EURO &kp DE_DOLLAR &kp DE_PERCENT /**/ &none /* ----- */ &none /**/ &kp DE_AMPS &kp DE_SLASH &kp DE_LPAR &kp DE_RPAR &kp DE_EQUAL &kp DE_QUESTION
                 &bootloader    &none        &none       &kp DE_LBKT &kp DE_LBRC   &kp DE_LT      /**/ &none /* ----- */ &none /**/ &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT   &kp DE_TILDE &none
-                &sys_reset     &kp DE_GRAVE &kp DE_PIPE &kp DE_RBKT &kp DE_RBRC   &kp DE_GT      /**/       /* ----- */       /**/ &kp HOME    &kp PG_DN    &kp PG_UP   &kp END     &none        &none
+                &trans         &kp DE_GRAVE &kp DE_PIPE &kp DE_RBKT &kp DE_RBRC   &kp DE_GT      /**/       /* ----- */       /**/ &kp HOME    &kp PG_DN    &kp PG_UP   &kp END     &none        &trans
                                                         &none       &trans        &none          /**/       /* ----- */       /**/ &kp TAB     &trans       &kp DELETE
             >;
         };
@@ -82,10 +82,10 @@
         right_layer {
             display-name = "RIGHT";
             bindings = <
-                &none &kp DE_AT       &none     &kp DE_N7 &kp DE_N8 &kp DE_N9 /**/ &none /* ----- */ &none /**/ &kp DE_U_UMLAUT &none  &kp DE_O_UMLAUT &none &none &kp DE_BACKSLASH
-                &none &kp DE_A_UMLAUT &kp DE_SZ &kp DE_N4 &kp DE_N5 &kp DE_N6 /**/ &none /* ----- */ &none /**/ &none           &none  &none           &none &none &bootloader
-                &none &none           &none     &kp DE_N1 &kp DE_N2 &kp DE_N3 /**/       /* ----- */       /**/ &none           &none  &none           &none &none &sys_reset
-                                                &kp DE_N0 &trans    &none     /**/       /* ----- */       /**/ &none           &trans &none
+                &none  &kp DE_AT       &none     &kp DE_N7 &kp DE_N8 &kp DE_N9 /**/ &none /* ----- */ &none /**/ &none &kp DE_U_UMLAUT &none  &kp DE_O_UMLAUT &none &kp DE_BACKSLASH
+                &none  &kp DE_A_UMLAUT &kp DE_SZ &kp DE_N4 &kp DE_N5 &kp DE_N6 /**/ &none /* ----- */ &none /**/ &none &none           &none  &none           &none &bootloader
+                &trans &none           &none     &kp DE_N1 &kp DE_N2 &kp DE_N3 /**/       /* ----- */       /**/ &none &none           &none  &none           &none &trans
+                                                 &kp DE_N0 &trans    &none     /**/       /* ----- */       /**/ &none &trans          &none
             >;
         };
 
@@ -93,7 +93,7 @@
             display-name = "FUNC";
             bindings = <
                 &kp F11 &kp F1 &kp F2        &kp F3 &kp F4       &kp F5 /**/ &none /* ----- */ &none /**/ &kp F6       &kp F7        &kp F8        &kp F9        &kp F10      &kp F12
-                &none   &none  &kp LG(LS(S)) &none  &none        &none  /**/ &none /* ----- */ &none /**/ &kp RG(LEFT) &kp LG(PG_DN) &kp LG(PG_UP) &kp RG(RIGHT) &none        &rgb_ug RGB_TOG
+                &none   &none  &kp LG(LS(S)) &none  &none        &none  /**/ &none /* ----- */ &none /**/ &kp LG(LEFT) &kp LG(PG_DN) &kp LG(PG_UP) &kp LG(RIGHT) &none        &rgb_ug RGB_TOG
                 &none   &none  &none         &none  &kp LG(DE_V) &none  /**/       /* ----- */       /**/ &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4 &bt BT_CLR
                                              &none  &trans       &none  /**/       /* ----- */       /**/ &none        &trans        &none
             >;
