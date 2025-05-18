@@ -1,0 +1,383 @@
+layout: {zmk_keyboard: corne_choc_pro, layout_name: default_layout}
+layers:
+  BASE: ['&td_super_esc', DE Q, DE W, DE E, DE R, DE T, '', '', DE Z, DE U, DE I, DE O, DE P, DE CARET, TAB, DE A, DE S, DE D, DE F, DE G, '', '', DE H, DE J, DE
+      K, DE L, DE PLUS, DE HASH, LSHFT, DE Y, DE X, DE C, DE V, DE B, DE N, DE M, DE COMMA, DE DOT, DE MINUS, RSHIFT, LCTRL, LEFT, SPACE, ENTER, RIGHT, BSPC]
+  LEFT:
+  - '&studio_unlock'
+  - DE EXCL
+  - DE DQT
+  - DE EURO
+  - DE DOLLAR
+  - DE PERCENT
+  - ''
+  - ''
+  - DE AMPS
+  - DE SLASH
+  - DE LPAR
+  - DE RPAR
+  - DE EQUAL
+  - DE QUESTION
+  - '&bootloader'
+  - ''
+  - ''
+  - DE LBKT
+  - DE LBRC
+  - DE LT
+  - ''
+  - ''
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - DE TILDE
+  - ''
+  - '&sys_reset'
+  - DE GRAVE
+  - DE PIPE
+  - DE RBKT
+  - DE RBRC
+  - DE GT
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - TAB
+  - {t: ▽, type: trans}
+  - DELETE
+  RIGHT:
+  - ''
+  - DE AT
+  - ''
+  - DE 7
+  - DE 8
+  - DE 9
+  - ''
+  - ''
+  - DE U UMLAUT
+  - ''
+  - DE O UMLAUT
+  - ''
+  - ''
+  - DE BACKSLASH
+  - ''
+  - DE A UMLAUT
+  - DE SZ
+  - DE 4
+  - DE 5
+  - DE 6
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&bootloader'
+  - ''
+  - ''
+  - ''
+  - DE 1
+  - DE 2
+  - DE 3
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
+  - DE 0
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  FUNC:
+  - F11
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - ''
+  - ''
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F12
+  - ''
+  - ''
+  - Gui+Sft+S
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+LEFT
+  - Gui+PG DN
+  - Gui+PG UP
+  - Gui+RIGHT
+  - ''
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - Gui+DE V
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - BT CLR
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  EXTRA 2:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  EXTRA 3:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  EXTRA 4:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  EXTRA 5:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  EXTRA 6:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+combos:
+- p: [40, 42]
+  k: LEFT GUI
