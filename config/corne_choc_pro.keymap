@@ -61,10 +61,10 @@
         default_layer {
             display-name = "BASE";
             bindings = <
-                &td_super_esc &kp DE_Q &kp DE_W &kp DE_E  &kp DE_R &kp DE_T  /**/ &none /* ----- */ &none /**/ &kp DE_Z  &kp DE_U  &kp DE_I     &kp DE_O   &kp DE_P     &kp DE_CARET
-                &kp TAB       &kp DE_A &kp DE_S &kp DE_D  &kp DE_F &kp DE_G  /**/ &none /* ----- */ &none /**/ &kp DE_H  &kp DE_J  &kp DE_K     &kp DE_L   &kp DE_PLUS  &kp DE_HASH
-                &kp LSHFT     &kp DE_Y &kp DE_X &kp DE_C  &kp DE_V &kp DE_B  /**/       /* ----- */       /**/ &kp DE_N  &kp DE_M  &kp DE_COMMA &kp DE_DOT &kp DE_MINUS &kp RSHIFT
-                                                &kp LCTRL &mo 1    &kp SPACE /**/       /* ----- */       /**/ &kp ENTER &mo 2     &kp BSPC
+                &kp TAB       &kp DE_Q &kp DE_W &kp DE_E  &kp DE_R   &kp DE_T  /**/ &none /* ----- */ &none /**/ &kp DE_Z   &kp DE_U  &kp DE_I     &kp DE_O   &kp DE_P        &kp DE_U_UMLAUT
+                &td_super_esc &kp DE_A &kp DE_S &kp DE_D  &kp DE_F   &kp DE_G  /**/ &none /* ----- */ &none /**/ &kp DE_H   &kp DE_J  &kp DE_K     &kp DE_L   &kp DE_O_UMLAUT &kp DE_A_UMLAUT
+                &kp DE_LT     &kp DE_Y &kp DE_X &kp DE_C  &kp DE_V   &kp DE_B  /**/       /* ----- */       /**/ &kp DE_N   &kp DE_M  &kp DE_COMMA &kp DE_DOT &kp DE_MINUS    &kp DE_GRAVE
+                                                &kp SPACE &kp LSHIFT &lt 1 DEL /**/       /* ----- */       /**/ &lt 2 BSPC &RSHIFT   &kp ENTER
             >;
         };
 
@@ -95,16 +95,6 @@
                 &none   &none  &kp LG(LS(S)) &none  &none        &none  /**/ &none /* ----- */ &none /**/ &kp LG(LEFT) &kp LG(PG_DN) &kp LG(PG_UP) &kp LG(RIGHT) &none        &rgb_ug RGB_TOG
                 &none   &none  &none         &none  &kp LG(DE_V) &none  /**/       /* ----- */       /**/ &bt BT_SEL 0 &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4 &bt BT_CLR
                                              &none  &trans       &none  /**/       /* ----- */       /**/ &none        &trans        &none
-            >;
-        };
-
-        neo_layer {
-            display-name = "NEO";
-            bindings = <
-                &td_super_esc &kp DE_X        &kp DE_V        &kp DE_L        &kp DE_C &kp DE_W  &none /**/ &none /* ----- */ &none /**/ &kp DE_K &kp DE_H  &kp DE_G     &kp DE_F   &kp DE_Q &kp DE_SZ
-                &kp TAB       &kp DE_U        &kp DE_I        &kp DE_A        &kp DE_E &kp DE_O  &none /**/ &none /* ----- */ &none /**/ &kp DE_S &kp DE_N  &kp DE_R     &kp DE_T   &kp DE_D &kp DE_Y
-                &kp LSHIFT    &kp DE_UMLAUT_U &kp DE_UMLAUT_O &kp DE_UMLAUT_A &kp DE_P &kp DE_Z  &none /**/       /* ----- */       /**/ &kp DE_B &kp DE_M  &kp DE_COMMA &kp DE_DOT &kp DE_J &kp RSHIFT
-                                                              &none           &trans             &none /**/       /* ----- */       /**/ &none &trans &none
             >;
         };
 
