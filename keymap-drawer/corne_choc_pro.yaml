@@ -1,7 +1,52 @@
 layout: {zmk_keyboard: corne_choc_pro, layout_name: default_layout}
 layers:
-  BASE: ['&td_super_esc', DE Q, DE W, DE E, DE R, DE T, '', '', DE Z, DE U, DE I, DE O, DE P, DE CARET, TAB, DE A, DE S, DE D, DE F, DE G, '', '', DE H, DE J, DE
-      K, DE L, DE PLUS, DE HASH, LSHFT, DE Y, DE X, DE C, DE V, DE B, DE N, DE M, DE COMMA, DE DOT, DE MINUS, RSHIFT, LCTRL, LEFT, SPACE, ENTER, RIGHT, BSPC]
+  BASE:
+  - TAB
+  - DE Q
+  - DE W
+  - DE E
+  - DE R
+  - DE T
+  - ''
+  - ''
+  - DE Z
+  - DE U
+  - DE I
+  - DE O
+  - DE P
+  - DE U UMLAUT
+  - '&td_super_esc'
+  - DE A
+  - DE S
+  - DE D
+  - DE F
+  - DE G
+  - ''
+  - ''
+  - DE H
+  - DE J
+  - DE K
+  - DE L
+  - DE O UMLAUT
+  - DE A UMLAUT
+  - DE LT
+  - DE Y
+  - DE X
+  - DE C
+  - DE V
+  - DE B
+  - DE N
+  - DE M
+  - DE COMMA
+  - DE DOT
+  - DE MINUS
+  - DE GRAVE
+  - SPACE
+  - LSHIFT
+  - {t: DEL, h: LEFT}
+  - {t: BSPC, h: RIGHT}
+  - '&RSHIFT'
+  - ENTER
   LEFT:
   - '&studio_unlock'
   - DE EXCL
@@ -44,8 +89,8 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - ''
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
   - TAB
   - {t: ▽, type: trans}
   - DELETE
@@ -93,8 +138,8 @@ layers:
   - DE 0
   - {t: ▽, type: trans}
   - ''
-  - ''
   - {type: held}
+  - {t: ▽, type: trans}
   - ''
   FUNC:
   - F11
@@ -138,56 +183,9 @@ layers:
   - {t: BT, h: '4'}
   - BT CLR
   - ''
-  - {type: held}
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  EXTRA 2:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
   - {t: ▽, type: trans}
-  - ''
-  - ''
+  - {type: held}
+  - {type: held}
   - {t: ▽, type: trans}
   - ''
   EXTRA 3:
